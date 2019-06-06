@@ -5,8 +5,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
-   
+
+   .container {
+     .p {
+        border-bottom: 2px dashed @navigation-border;
+     }
+   }
     
     .text-content {
       width: 48%;
@@ -38,9 +44,18 @@
     }
   }
 
+  .p {
+    border-bottom: 2px dashed @navigation-border;
+  }
+
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    header{
+      border-top: 2px dashed @navigation-border;
+      border-bottom: 2px dashed @navigation-border;
+    }
 
     img {
       border-radius: 10px;
@@ -57,5 +72,9 @@
       width: 30%;
       margin-bottom: 30px;
     }
+
+    button{
+      .button(120px, 40px);
+  }
   }
 }// home

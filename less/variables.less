@@ -12,3 +12,35 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+
+// Escaped values
+@mobile: ~"(max-width: 500px)";
+
+@bottom-padding:20em;
+body {
+    font-size: 2rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    @media @mobile {
+      padding: 20px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+
+        nav {
+            display: flex;
+            flex-direction: column;
+    }
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+
+}
+        }
+    }
+

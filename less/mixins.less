@@ -1,1 +1,28 @@
 // Mixins in here
+.center(@j, @a){
+    display:flex;
+    justify-content:@j;
+    align-items:@a
+}
+
+.button(@width, @height){
+    width: @width;
+    height: @height;
+    background-color: #01807f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 10px;
+}
+
+
+
+// .custom-layout(@justify, @align){
+// 	display: flex;
+// 	justify-content: @justify;
+// 	align-items: @align;
+// }
+// // usage
+// .custom-layout(flex-end, center);
